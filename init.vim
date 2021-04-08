@@ -102,3 +102,12 @@ xnoremap J :move '>+1<CR>gv-gv
 
 " Easy access to init.vim
 map <leader>ec :e! ~/.config/nvim/init.vim<CR>
+
+" auto closing quotes/brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
